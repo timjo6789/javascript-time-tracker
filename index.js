@@ -76,7 +76,7 @@ const server = http.createServer((request, response) => {
   response.write(`
     <script>
       function trigger() {
-       fetch('http://172.28.245.3:8080/data')
+       fetch('http://10.0.0.244:8081/data')
        .then(response => response.text())
        .then(data => {
         data = data.split(' ');
